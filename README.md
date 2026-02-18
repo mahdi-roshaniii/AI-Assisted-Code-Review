@@ -118,3 +118,52 @@ This master's thesis describes the design, implementation, and evaluation of an 
 # 4. Session state management
 # 5. Model configuration interface
 ```
+
+#### 2.1.2 Ollama Integration
+- **API Communication:** REST API calls to local Ollama server
+- **Streaming Implementation:** Real-time character-by-character display
+- **Error Handling:** Comprehensive exception management
+- **Model Switching:** Dynamic model selection at runtime
+
+#### 2.1.3 User Interface
+- **Responsive Design:** Works on desktop and mobile
+- **Accessibility Features:** Screen reader support, keyboard navigation
+- **Internationalization:** UTF-8 support for multiple languages
+- **Custom Styling:** CSS enhancements for better UX
+
+### 2.2 Key Algorithms
+
+#### 2.2.1 Context Management Algorithm
+```
+Algorithm: Context Assembly
+Input: User message, conversation history, uploaded files
+Output: Formatted context for LLM
+
+1. Initialize empty context string
+2. Append system prompt with teaching guidelines
+3. For each message in recent history (last 6 messages):
+   a. Format as "Role: Content"
+   b. Append to context
+4. If files uploaded:
+   a. For each file: append "File: [filename]\n[content]"
+5. Append current user message
+6. Return context
+```
+
+#### 2.2.2 Response Streaming Algorithm
+```
+Algorithm: Stream Response
+Input: Prompt, System Context
+Output: Streaming text response
+
+1. Initialize empty response buffer
+2. Call Ollama API with streaming enabled
+3. While receiving chunks:
+   a. Parse JSON response
+   b. Extract text content
+   c. Append to buffer
+   d. Update UI with buffer content
+   e. Yield chunk for streaming
+4. Handle completion or errors
+5. Store complete response in history
+```
