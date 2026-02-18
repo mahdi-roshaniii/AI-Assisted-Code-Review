@@ -224,3 +224,24 @@ Output: Streaming text response
 2. **Model Selection Impact:** How different LLMs affect educational outcomes
 3. **Scalability Considerations:** Potential for classroom deployment
 4. **Integration Possibilities:** Combining with existing learning management systems
+
+## 5. Conclusion
+
+### 5.1 Conclusion
+This thesis demonstrates the feasibility and effectiveness of locally-deployed AI tutors for programming education. The developed system successfully addresses privacy concerns while providing personalized, interactive learning experiences. The research contributes to both educational technology and practical AI deployment methodologies.
+
+### 5.2 Contributions
+1. **Theoretical Contribution:** Framework for local AI educational tools
+2. **Practical Contribution:** Open-source implementation for community use
+3. **Methodological Contribution:** Evaluation framework for AI tutoring systems
+4. **Educational Contribution:** Evidence-based approach to programming instruction
+
+### 5.3 Societal Impact
+1. **Educational Equity:** Making programming education more accessible
+2. **Privacy Protection:** Setting standards for educational AI tools
+3. **Open Science:** Providing open-source tools for researchers
+4. **Sustainable AI:** Promoting efficient, locally-run AI applications
+
+## 6. Appendices
+
+
