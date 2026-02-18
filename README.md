@@ -17,3 +17,6 @@
 
 ### Thesis Title
 **"Design and Development of an AI-Assisted Code Review Tool for Beginner Programmers"**
+
+### Abstract
+This master's thesis describes the design, implementation, and evaluation of an AI-based programming tutor that runs entirely on the user's own computer, without relying on external servers. This system runs large language models locally through the Ollama framework to provide individualized, interactive programming instruction without requiring internet access or cloud services. The application targets key challenges in programming education by improving access, protecting privacy, and allowing learners to progress at a pace that fits their needs. This study adds to educational technology research by showing that locally hosted AI tutors can be implemented in computer science courses and can support student learning outcomes.
