@@ -167,3 +167,60 @@ Output: Streaming text response
 4. Handle completion or errors
 5. Store complete response in history
 ```
+### 2.3 Security and Privacy Features
+- **Local Processing:** All data stays on user's machine
+- **No External Calls:** Complete offline functionality
+- **Session Isolation:** Chat history cleared on application close
+- **File Handling:** Temporary file processing without persistence
+
+## 3. Features
+
+### 3.1 Core Educational Features
+| Feature | Description | Implementation Status |
+|---------|-------------|----------------------|
+| Interactive Q&A | Real-time conversation with AI tutor | ✅ Implemented |
+| Code Analysis | Upload and review programming code | ✅ Implemented |
+| Step-by-Step Guidance | Breaking down complex concepts | ✅ Implemented |
+| Multiple Language Support | Python, JavaScript, Java, C++, etc. | ✅ Implemented |
+| Error Explanation | Debugging assistance with explanations | ✅ Implemented |
+
+### 3.2 Technical Features
+| Feature | Description | Educational Value |
+|---------|-------------|-------------------|
+| Local Processing | No internet required | Privacy protection |
+| Model Selection | Choose different AI models | Adaptive teaching styles |
+| File Upload | Submit code for review | Practical application |
+| Conversation Export | Save learning sessions | Progress tracking |
+| Custom Prompts | Adjust AI behavior | Personalized learning |
+
+### 3.3 Advanced Features
+1. **Context-Aware Responses:** Maintains conversation history
+2. **Code Syntax Highlighting:** Improves code readability
+3. **Multi-file Analysis:** Handle multiple uploaded files
+4. **Parameter Tuning:** Adjust AI creativity and response length
+5. **Cross-Platform Support:** Windows, macOS, Linux
+
+## 4. Results & Discussion
+
+### 4.1 Expected Outcomes
+
+#### Technical Success:
+- Functional local AI tutoring system
+- Acceptable response times (<5 seconds average)
+- Low system resource usage (<2GB RAM)
+
+#### Educational Impact:
+- Significant learning gains (p < 0.05)
+- High user satisfaction (SUS > 80)
+- Positive qualitative feedback
+
+#### Usability Results:
+- Intuitive interface (learnability < 10 minutes)
+- High engagement (average session > 15 minutes)
+- Low error rates (<5% user-reported issues)
+
+### 4.2 Discussion Points
+1. **Privacy vs. Performance Trade-off:** Analyzing the balance between local processing limitations and privacy benefits
+2. **Model Selection Impact:** How different LLMs affect educational outcomes
+3. **Scalability Considerations:** Potential for classroom deployment
+4. **Integration Possibilities:** Combining with existing learning management systems
