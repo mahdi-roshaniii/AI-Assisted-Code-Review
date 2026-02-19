@@ -9,7 +9,7 @@
 **University:** University of Europe for Applied Sciences  
 **Degree Program:** Master of Software Engineering
 **Thesis Type:** Master Thesis  
-**Supervisor:** Prof. Dr. Raja Hashim Ali  
+**Supervisor:** Prof. Dr. Raja Hashim Ali, Prof. Dr. Iftikhar Ahmed  
 **Submission Deadline:** 9th March 2026  
 **Academic Year:** 2025/2026  
 
