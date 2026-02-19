@@ -245,3 +245,109 @@ This thesis demonstrates the feasibility and effectiveness of locally-deployed A
 ## 6. Appendices
 
 
+### Appendix A: Installation and Setup Guide
+
+#### Prerequisites
+- Python 3.8 or higher (Download from [python.org](https://python.org))
+- Ollama (Download from [ollama.com](https://ollama.com))
+- At least 4GB RAM recommended
+- Windows/Mac/Linux operating system
+
+#### Step 1: Download Ollama
+1. Go to [ollama.com](https://ollama.com)
+2. Download and install Ollama for your operating system
+3. **Windows:** Run the installer (.exe file)
+4. **Mac:** Drag Ollama to Applications folder
+5. **Linux:** Follow terminal instructions on website
+
+#### Step 2: Get the Code
+Download the project files:
+
+**Option A - Download ZIP:**
+1. Click "Code" button
+2. Select "Download ZIP"
+3. Extract the ZIP file to a folder
+
+**Option B - Clone (if you have Git):**
+```bash
+git clone https://github.com/[YOUR_USERNAME]/ai-programming-tutor.git
+cd ai-programming-tutor
+```
+
+#### Step 3: Install Python Requirements
+Open terminal/command prompt in the project folder:
+
+```bash
+# Create virtual environment (recommended)
+python -m venv venv
+
+# Activate virtual environment
+# Windows:
+venv\Scripts\activate
+# Mac/Linux:
+source venv/bin/activate
+
+# Install required packages
+pip install -r requirements.txt
+```
+
+#### Step 4: Download AI Model
+In a NEW terminal window, run:
+```bash
+# Start Ollama service (keep this running)
+ollama serve
+```
+
+In ANOTHER terminal window, run:
+```bash
+# Download the AI model (this may take 5-10 minutes)
+ollama pull qwen2.5-coder:3b
+```
+
+#### Step 5: Run the Application
+Back in your first terminal (with venv activated):
+```bash
+streamlit run app.py
+```
+
+The app will open in your browser at: **http://localhost:8501**
+
+### Appendix B: Source Code Documentation
+
+#### Modules Used
+- **`json`** - Data serialization for conversation export
+- **`streamlit`** - Web application framework
+- **`subprocess`** - System command execution for Ollama
+
+#### Functions
+| Function | Description | Parameters | Returns |
+|----------|-------------|------------|---------|
+| `check_ollama_status() -> Dict` | Checks Ollama installation and service status | None | Status dictionary |
+| `clear_chat()` | Clears conversation history | None | None |
+| `export_conversation()` | Exports chat to JSON file | None | Filename |
+| `generate_ollama_response_api()` | Uses HTTP API for AI responses | prompt, system_prompt | Streaming generator |
+| `generate_ollama_response_cli()` | Uses CLI fallback for AI responses | prompt, system_prompt | Streaming generator |
+| `process_file_upload()` | Processes uploaded files | uploaded_file | File content or None |
+| `stream_ollama_response()` | Main response handler with fallback | prompt, system_prompt | Streaming generator |
+
+#### Constants
+```python
+MODEL_NAME = "qwen2.5-coder:3b"  # Default AI model
+DEFAULT_SYSTEM_PROMPT = """You are an AI programming tutor for beginners..."""
+```
+
+*(Generated with pydoc)*
+
+### Appendix C: Ethical Considerations
+1. **Data Privacy:** All processing is local, no data collection occurs
+2. **Bias Mitigation:** Multiple model options to reduce single-model bias
+3. **Accessibility:** Designed with WCAG guidelines in mind
+4. **Transparency:** Open-source implementation for public scrutiny
+
+## 🙏 Acknowledgments
+
+I would like to express my sincere gratitude to:
+
+1. **My Supervisor:** Prof. Dr. Raja Hashim Ali for invaluable guidance and support
+2. **University Faculty:** For providing resources and expertise
+3. **Open Source Community:** For the tools and frameworks that made this project possible
